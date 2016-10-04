@@ -2,9 +2,6 @@
 library(getopt)  # for setting up the options system
 # install.packages("plyr")
 library(plyr)
-# source("https://bioconductor.org/biocLite.R")
-# biocLite("Biostrings")
-library(Biostrings)  ## for matching peptides to the sequence
 na.mean <- function (x) {
   return (max(x, na.rm = T))
 }
