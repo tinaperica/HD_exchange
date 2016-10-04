@@ -10,10 +10,7 @@ na.mean <- function (x) {
 }
 spec = matrix(c(
   'data_dir', 'd', 2, 'character',
-  'protein_sequence', 's', 1, 'character',
-  'protein_sequence2', 't', 2, 'character',
   'ms_data1', 'm', 1, 'character',
-  'ms_data2', 'n', 2, 'character',
   'out_prefix', 'o', 2, 'character'
 ), byrow = T, ncol = 4)
 opt <- getopt(spec)
