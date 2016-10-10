@@ -13,13 +13,9 @@ spec = matrix(c(
 opt <- getopt(spec)
 ### run code with these options
 ## e.g.
-## RScript plot_HD_exchange.R --ms_data1 "SOS hdpc peptides.csv" --out_prefix "SOS_hdcp"
 if ( is.null(opt$data_dir) ) { opt$data_dir <- "."}  ## if no dir is defined, data needs to be in the same dir as the program
 if ( is.null(opt$out_prefix) ) { opt$out_prefix <- "out" }  ## if no out_prefix, default to out
 outfilename <- paste(opt$out_prefix, "_HD_exchange_stacked_barplot.pdf", sep = "")
-#### temp development code
-#opt$data_dir = "~/Documents/HD_exchange_MS/"
-#opt$ms_data = 'SOS hdpc peptides.csv'
 #######################################
 setwd(opt$data_dir)
 ms_data1 <- read.csv(opt$ms_data, stringsAsFactors = F)
