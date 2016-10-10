@@ -11,8 +11,6 @@ spec = matrix(c(
   'out_prefix', 'o', 2, 'character'
 ), byrow = T, ncol = 4)
 opt <- getopt(spec)
-### run code with these options
-## e.g.
 if ( is.null(opt$data_dir) ) { opt$data_dir <- "."}  ## if no dir is defined, data needs to be in the same dir as the program
 if ( is.null(opt$out_prefix) ) { opt$out_prefix <- "out" }  ## if no out_prefix, default to out
 outfilename <- paste(opt$out_prefix, "_HD_exchange_stacked_barplot.pdf", sep = "")
